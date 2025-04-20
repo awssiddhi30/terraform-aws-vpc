@@ -27,3 +27,7 @@ output "database_subnet_ids" {
     value = aws_subnet.database[*].id
   
 }
+
+output "db_subnet_group" {
+  value = aws_db_subnet_group.expense.name
+}
